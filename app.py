@@ -48,6 +48,7 @@ def hello():
     return "Hello World"
 
 @app.route('/nationalid', methods=['GET'])
+
 def get_all_nationalids():
     nin = Nationalid.get_all()
     serializer = NationalidSchema(many=True)
@@ -58,9 +59,10 @@ def get_all_nationalids():
     )
 
 @app.route('/nationalid', methods=['POST'])
+
 def register_nationalid():
     data = request.get_json()
-    new_nationalid = Nationalid( 
+    new_nationalid = Nationalid ( 
         nin=data.get('nin'),
         surname=data.get('surname'),
         given_name=data.get('given_name')
