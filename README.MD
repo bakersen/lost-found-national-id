@@ -4,7 +4,7 @@ This is a demo app to track lost and found Ugandan National IDs. It allows users
 
 ### The goal is to demonstrate proof of concept for the following technlogies used. 
 
--Angular For Frontend.
+-ReactJs For Frontend.
 -Python/Flask for RESTFUL APIs.
 -MySQL for Database.
 
